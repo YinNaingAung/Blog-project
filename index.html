@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BerryLeaf-Blog</title>
+    <link rel="icon" href="../assets/image/logo.svg">
+</head>
+<!-- <link rel="stylesheet" href="/dist/output.css"> -->
+<link rel="stylesheet" href="../src/build.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.2/swiper-bundle.min.css" integrity="sha512-JDUgDSogL8M6bAd6kfLuVyCQVqkKraT6Of9gO4CyDeqM8KARC98JZlXsvvj7djlA+c2qd2ulDHy67fNjyOX+DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="../src/style.css">
+<style>
+    /* CHECKBOX TOGGLE SWITCH */
+    /* @apply rules for documentation, these do not work as inline style */
+    .toggle-checkbox:checked {
+      @apply: right-0 border-green-400;
+      right: 0;
+      border-color: #68D391;
+    }
+    .toggle-checkbox:checked + .toggle-label {
+      @apply: bg-green-400;
+      background-color: #68D391;
+    }
+</style>
+<body class="dark:bg-slate-900">
+    <!-- nav -->
+    <div class="bg-slate-900">
+        <div class="flex justify-between items-center container mx-auto px-5 py-5">
+            <!-- logo -->
+            <div class="flex justify-center items-center space-x-2" >
+                <img class="w-10 " src="../assets/image/logo.svg" alt="">
+                <span class="text-white hidden text-lg md:flex">berryLeaf</span>
+            </div>
+            <!-- menu -->
+            <div>
+                <ul class="flex justify-center items-center space-x-3  text-white text-md md:text-lg">
+                    <li>Home</li>
+                    <li>Why?</li>
+                    <li>Features</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <!-- dark mode -->
+            <div>
+                <div class="scale-90 md:scale-100 relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+                    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+                    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+                </div>
+            </div>
+       </div>
+    </div>
+
+    <!-- slides -->
+    <div class="bg-slate-800 dark:bg-slate-900">
+        <div class=" px-2 md:px-10 container mx-auto py-5 relative ">
+            <!-- swiper -->
+            <div class="reveal swiper h-96 overflow-hidden rounded-xl ">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper">
+                 <!-- Slides -->
+                 <div class="swiper-slide">
+                    <!-- slide -->
+                   <div class="relative ">
+                       <img class="w-full object-cover h-96" src="../assets/image/img.jpg" alt="">
+                       <div class="absolute bottom-8 left-2 md:left-5">
+                           <h1 class="text-2xl text-white">How CPTS empowers job-ready penetration testing skills in cybersecurity teams</h1>
+                           <button class="bg-slate-500 rounded-md px-2 py-1 text-white">|10 min read</button>
+                           <span class="text-white">Oct 14,2022</span>
+                       </div>
+                   </div>
+                 </div>
+                 <div class="swiper-slide">
+                    <!-- slide -->
+                   <div class="relative ">
+                       <img class="w-full object-cover h-96" src="../assets/image/lusi.jpg" alt="">
+                       <div class="absolute bottom-8 left-2 md:left-5">
+                           <h1 class="text-2xl text-white">How CPTS empowers job-ready penetration testing skills in cybersecurity teams</h1>
+                           <button class="bg-slate-500 rounded-md px-2 py-1 text-white">|10 min read</button>
+                           <span class="text-white">Oct 14,2022</span>
+                       </div>
+                   </div>
+                 </div>
+                 <div class="swiper-slide">
+                    <!-- slide -->
+                   <div class="relative ">
+                       <img class="w-full object-cover h-96" src="../assets/image/img.jpg" alt="">
+                       <div class="absolute bottom-8 left-2 md:left-5">
+                           <h1 class="text-2xl text-white">How CPTS empowers job-ready penetration testing skills in cybersecurity teams</h1>
+                           <button class="bg-slate-500 rounded-md px-2 py-1 text-white">|10 min read</button>
+                           <span class="text-white">Oct 14,2022</span>
+                       </div>
+                   </div>
+                 </div>
+               
+                
+               </div>
+               <!-- If we need pagination -->
+               <div class="swiper-pagination"></div>
+             
+               
+             
+               <!-- If we need scrollbar -->
+               <!-- <div class="swiper-scrollbar"></div> -->
+             </div>
+             <!-- If we need navigation buttons -->
+             <div class="swiper-button-prev bg-slate-500 border-4  border-[#0f172a]  absolute  rounded-full "></div>
+             <div class="swiper-button-next bg-slate-500 border-4  border-[#0f172a]  absolute rounded-full  "></div>
+          </div>
+    </div>
+  
+
+   <!-- member sections -->
+   <section class="bg-slate-800 ">
+        <div class="grid grid-cols-2 gap-4 lg:grid-cols-4 container mx-auto text-center py-10">
+                    <div class="reveal">
+                        <h2 class="text-2xl text-emerald-500 font-bold">500+ M</h2>
+                        <h5 class="text-white">Hacking Labs</h5>
+                    </div>
+                    <div class="reveal">
+                        <h2 class="text-2xl text-emerald-500 font-bold">400+ M</h2>
+                        <h5 class="text-white">Platform Members</h5>
+                    </div>
+                    <div class="reveal">
+                        <h2 class="text-2xl text-emerald-500 font-bold">300+ M</h2>
+                        <h5 class="text-white">Playtime Hours</h5>
+                    </div>
+                    <div class="reveal">
+                        <h2 class="text-2xl text-emerald-500 font-bold">300+ K</h2>
+                        <h5 class="text-white">Companies & Universities</h5>
+                    </div>
+        </div>
+       
+   </section>
+
+    <!-- blog cards -->
+    <section class=" bg-slate-800 pb-10">
+        <div class="bg-slate-800 py-10">
+            <div class=" container mx-auto px-10  ">
+                <h1 class="reveal text-2xl text-white font-bold mb-5">How Hackers Digest</h1>
+                <p class="reveal text-slate-200">Want to dive in deeper into a specific cotegory? Click on a topic below.</p>
+            </div>
+        </div>   
+        <div class="container mx-auto grid lg:grid-cols-3 gap-5">
+            <div class="reveal max-w-sm mx-auto border p-5 rounded-xl bg-slate-700 border-slate-600">
+                <img class="w-full h-72 rounded-lg object-top object-cover" src="../assets/image/jisoo.jpeg" alt="">
+                <h1 class="text-slate-100">HACKING| 10 MIN READ</h1>
+                <p class="text-slate-50 text-xl font-bold" >From poker player to Senior Pentester at Oracler Jeremy's journey into cybersec</p>
+            </div>
+            <div class="reveal max-w-sm mx-auto border p-5 rounded-xl bg-slate-700 border-slate-600">
+                <img class="w-full h-72 rounded-lg object-top object-cover" src="../assets/image/jisoo.jpeg" alt="">
+                <h1 class="text-slate-100">HACKING| 10 MIN READ</h1>
+                <p class="text-slate-50 text-xl font-bold" >From poker player to Senior Pentester at Oracler Jeremy's journey into cybersec</p>
+            </div>
+            <div class="reveal max-w-sm mx-auto border p-5 rounded-xl bg-slate-700 border-slate-600">
+                <img class="w-full h-72 rounded-lg object-top object-cover" src="../assets/image/jisoo.jpeg" alt="">
+                <h1 class="text-slate-100">HACKING| 10 MIN READ</h1>
+                <p class="text-slate-50 text-xl font-bold" >From poker player to Senior Pentester at Oracler Jeremy's journey into cybersec</p>
+            </div>
+            <div class="reveal max-w-sm mx-auto border p-5 rounded-xl bg-slate-700 border-slate-600">
+                <img class="w-full h-72 rounded-lg object-top object-cover" src="../assets/image/jisoo.jpeg" alt="">
+                <h1 class="text-slate-100">HACKING| 10 MIN READ</h1>
+                <p class="text-slate-50 text-xl font-bold" >From poker player to Senior Pentester at Oracler Jeremy's journey into cybersec</p>
+            </div>
+            <div class="reveal max-w-sm mx-auto border p-5 rounded-xl bg-slate-700 border-slate-600">
+                <img class="w-full h-72 rounded-lg object-top object-cover" src="../assets/image/jisoo.jpeg" alt="">
+                <h1 class="text-slate-100">HACKING| 10 MIN READ</h1>
+                <p class="text-slate-50 text-xl font-bold" >From poker player to Senior Pentester at Oracler Jeremy's journey into cybersec</p>
+            </div>
+            <div class="reveal max-w-sm mx-auto border p-5 rounded-xl bg-slate-700 border-slate-600">
+                <img class="w-full h-72 rounded-lg object-top object-cover" src="../assets/image/jisoo.jpeg" alt="">
+                <h1 class="text-slate-100">HACKING| 10 MIN READ</h1>
+                <p class="text-slate-50 text-xl font-bold" >From poker player to Senior Pentester at Oracler Jeremy's journey into cybersec</p>
+            </div>
+    
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.2/swiper-bundle.min.js" integrity="sha512-LGC9ji+Ma2hNS7Dnt7iFOYJgez3pcjaHDeMXSVm0pO8R477pEGwTepZK0P2xBmVHTk8gLzoxpopsMv4TgVZceA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../src/main.js"></script>
+    
+</body>
+</html>
